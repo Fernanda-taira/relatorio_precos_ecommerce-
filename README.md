@@ -33,5 +33,4 @@ O projeto foi dividido em duas grandes camadas:
   ```dax
    Total Produtos = COUNTROWS('relatorio_precos_ecommerce')
   Preço Médio (USD) = AVERAGE('relatorio_precos_ecommerce'[Preço (USD)])
-
-  ![Dashboard de Monitoramento](dashboard_ecommerce.png)
+ ```dax ![Dashboard de Monitoramento](dashboard_ecommerce.png)
