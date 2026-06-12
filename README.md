@@ -30,7 +30,8 @@ O projeto foi dividido em duas grandes camadas:
 ### Etapa 2: Data Cleaning e Modelagem (Power BI)
 * **Tratamento de Anomalias Reais:** Durante a ingestão, foi identificada uma divergência regional onde o ponto americano de centavos foi interpretado como separador de milhar. A correção foi realizada via Power Query, convertendo a coluna temporariamente em Texto, aplicando a substituição de `.` por `,` e tipando novamente como Número Decimal.
 * **Inteligência com DAX:** Criação de medidas dinâmicas para garantir performance no relatório:
-  ```dax
-   Total Produtos = COUNTROWS('relatorio_precos_ecommerce')
-  Preço Médio (USD) = AVERAGE('relatorio_precos_ecommerce'[Preço (USD)])
- ```dax ![Dashboard de Monitoramento](dashboard_ecommerce.png)
+```dax
+Total Produtos = COUNTROWS('relatorio_precos_ecommerce')
+Preço Médio (USD) = AVERAGE('relatorio_precos_ecommerce'[Preço (USD)])
+```
+ ![Dashboard de Monitoramento](dashboard_ecommerce.png)
